@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 45%;
+  box-shadow: 5px 5px 15px 10px hsl(218, 22%, 88%);
+}
+
+.card {
+  padding: 3em 2.5em;
+}
+
+.card-white {
+  background-color: #fff;
+  grid-column: 1 / span 2;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.card-dark {
+  background: hsl(179, 62%, 43%);
+}
+
+.card-grey {
+  background-color: hsla(179, 62%, 43%, 0.9);
+}
+
+.card h2 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 0.8em;
+}
+
+.card h3 {
+  color: hsl(71, 73%, 54%);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0.7em;
+}
+
+.card-white p {
+  line-height: 1.6;
+  color: hsl(218, 22%, 67%);
+}
+
+.card-dark {
+  border-bottom-left-radius: 6px;
+}
+
+.card-grey {
+  border-bottom-right-radius: 6px;
+}
+
+.card-dark h4,
+.card-grey h4 {
+  font-size: 18px;
+  color: hsl(204, 43%, 93%);
+}
+
+.cost {
+  display: flex;
+  align-items: center;
+  color: hsla(218, 22%, 88%, 0.6);
+  margin-top: 1em;
+}
+
+.cost span {
+  color: #fff;
+  font-size: 2em;
+  margin-right: 14px;
+  font-weight: 700;
+}
+
+.access {
+  margin-top: 0.5em;
+  color: hsl(204, 43%, 93%);
+}
+
+.card-grey .list {
+  list-style: none;
+}
+
+.card-grey h4 {
+  margin-bottom: 1.1em;
+}
+
+.card-grey .list li {
+  font-size: 14px;
+  color: hsla(218, 22%, 90%, 0.8);
+  margin-top: 3px;
+}
+
+.btn {
+  width: 100%;
+  padding: 1em 2em;
+  background: hsl(71, 73%, 54%);
+  border: none;
+  margin-top: 1.7em;
+  border-radius: 5px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: hsl(71, 73%, 60%);
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin: 1em 2em;
+  }
+
+  .cards {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 2em 1.5em;
+  }
+
+  .card-white {
+    grid-column: 1;
+  }
+
+  .card-dark {
+    border-bottom-left-radius: 0px;
+  }
+
+  .card-grey {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .card h2 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 0.8em;
+    font-size: 22px;
+  }
+
+  .card h3 {
+    color: hsl(71, 73%, 54%);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0.7em;
+  }
+
+  .card-white p {
+    line-height: 1.6;
+    color: hsl(218, 22%, 67%);
+    font-size: 14px;
+  }
+
+  .card-dark h4,
+  .card-grey h4 {
+    font-size: 20px;
+    color: hsl(204, 43%, 93%);
+  }
+}
